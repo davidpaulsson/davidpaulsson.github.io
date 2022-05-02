@@ -54,6 +54,7 @@ module.exports = {
         plugins: [`gatsby-remark-smartypants`],
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-use-dark-mode`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

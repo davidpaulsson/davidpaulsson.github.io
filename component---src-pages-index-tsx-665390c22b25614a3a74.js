@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdavidpaulsson_se=self.webpackChunkdavidpaulsson_se||[]).push([[691],{6817:function(e,a,s){s.r(a);var n=s(7294),u=s(8613);a.default=function(){return n.createElement("div",{className:"pad"},n.createElement(u.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-665390c22b25614a3a74.js.map

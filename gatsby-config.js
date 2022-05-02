@@ -68,7 +68,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/davidpaulsson-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/davidpaulsson-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

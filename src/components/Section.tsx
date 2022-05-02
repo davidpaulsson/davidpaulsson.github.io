@@ -1,5 +1,5 @@
 import React from 'react';
-import './section.scss';
+import './Section.scss';
 import slugify from 'slugify';
 
 const Section = ({ title, columnHeaders, columnData }) => {

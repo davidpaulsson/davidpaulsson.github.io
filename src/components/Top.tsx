@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './logo';
-import './top.scss';
+import Logo from './Logo';
+import './Top.scss';
 
 const Top = ({ output, children }) => (
   <div className="top">
@@ -8,7 +8,7 @@ const Top = ({ output, children }) => (
     <div className="top__input">{children}</div>
     <div className="top__cr">
       <div>©</div>
-      2020
+      {new Date().getFullYear()}
     </div>
   </div>
 );

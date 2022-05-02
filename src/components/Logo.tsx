@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import useDarkMode from 'use-dark-mode';
-import './logo.scss';
+import './Logo.scss';
 
 const Logo = () => {
   const darkMode = useDarkMode();

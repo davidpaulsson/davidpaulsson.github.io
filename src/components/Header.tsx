@@ -1,7 +1,7 @@
 import { motion, useCycle } from 'framer-motion';
 import React from 'react';
-import './header.scss';
-import Toggle from './toggle';
+import './Header.scss';
+import Toggle from './Toggle';
 
 const horunge = (str, opt = 2) => {
   const arr = str.trim().split(' ');
@@ -31,9 +31,10 @@ const Header = ({ headline, subtitle, html }) => {
       <motion.div
         className="h2 header__content"
         style={{ overflow: 'hidden' }}
-        initial={{ height: 0 }}
-        animate={{ height: isOpen ? 'auto' : 0 }}
-        exit={{ height: 0 }}
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ ease: [0.87, 0, 0.13, 1], duration: 0.6 }}
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </header>

@@ -1,18 +1,18 @@
 // import { motion } from 'framer-motion';
 // import { Link } from 'gatsby';
 import React from 'react';
-import Input from '../components/input';
-// import Output from '../components/output';
+import Input from '../components/Input';
+// import Output from '../components/Output';
 // import {
 //   behindTransition,
 //   coverTransition,
 //   frontTransition,
 // } from '../utils/transitions';
-import useWindowSize from '../utils/useWindowSize';
+// import useWindowSize from '../utils/useWindowSize';
 import './styles.scss';
 
 const IndexPage = () => {
-  const { height } = useWindowSize();
+  // const { height } = useWindowSize();
 
   return (
     <div className="pad">

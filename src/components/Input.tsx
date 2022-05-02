@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import Contact from './contact';
-import Header from './header';
-import Section from './section';
-import SEO from './seo';
-import Top from './top';
-import Testimonials from './testimonials';
+import Contact from './Contact';
+import Header from './Header';
+import Section from './Section';
+import Seo from './Seo';
+import Top from './Top';
+import Testimonials from './Testimonials';
 
 const Input = () => {
   const { content, experiences, education, awards } = useStaticQuery(
@@ -97,10 +97,10 @@ const Input = () => {
 
   return (
     <>
-      <SEO {...{ title, description }} />
+      <Seo {...{ title, description }} />
       <Top>
         <div>Input</div>
-        2003—2020
+        2003—{new Date().getFullYear()}
       </Top>
       <Header {...{ headline, subtitle, html }} />
 

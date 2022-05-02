@@ -62,13 +62,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        icon: `src/images/davidpaulsson-icon.png`,
         name: `davidpaulsson`,
         short_name: `davidpaulsson`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/davidpaulsson-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

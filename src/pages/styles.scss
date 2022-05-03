@@ -4,16 +4,14 @@
   top: 0;
   right: 0;
   left: 0;
-
   height: 180px;
+  overflow: hidden;
 }
 
 .front {
   position: relative;
   z-index: 1;
-
   margin-top: 180px;
-
   background: var(--background);
 }
 

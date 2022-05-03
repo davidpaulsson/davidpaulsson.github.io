@@ -8,20 +8,30 @@ import {
   coverTransition,
   frontTransition,
 } from '../utils/transitions';
+import useElementSize from '../utils/useElementSize';
 import useWindowSize from '../utils/useWindowSize';
 import './styles.scss';
 
 const IndexPage = () => {
   const { height } = useWindowSize();
+  const [behindRef, { height: behindHeight }] = useElementSize();
 
   return (
     <>
-      <motion.div className="behind pad" {...behindTransition}>
+      <motion.div
+        style={{ height: behindHeight + 'px' }}
+        className="behind pad"
+        {...behindTransition}
+      >
         <Input />
       </motion.div>
       <motion.div className="cover" {...coverTransition} />
-      <Link className="behind" to="/" />
-      <motion.div className="front" {...frontTransition({ height })}>
+      <Link className="behind" to="/" title="Go to homepage" />
+      <motion.div
+        ref={behindRef}
+        className="front"
+        {...frontTransition({ height })}
+      >
         <div className="pad">
           <Output />
         </div>

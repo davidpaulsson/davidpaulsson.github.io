@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `David Paulsson`,
-    description: ``,
+    description: `I am a developer based in Stockholm, Sweden. Put the user first. Sweat the little details. Fight for good UX.`,
     email: `david@davidpaulsson.se`,
     author: `davidpaulsson`,
   },
@@ -39,6 +39,13 @@ module.exports = {
       options: {
         name: `testimonials`,
         path: `${__dirname}/src/content/testimonials`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/content/projects`,
       },
     },
     {

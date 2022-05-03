@@ -12,7 +12,7 @@ export const frontTransition = ({ height }) => ({
 });
 
 export const coverTransition = {
-  animate: { opacity: 0.1 },
+  animate: { opacity: 0.5 },
   transition: { ease: [0.87, 0, 0.13, 1], duration: 0.6 },
   exit: { opacity: 0 },
 };

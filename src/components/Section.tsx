@@ -15,7 +15,7 @@ const Section = ({ title, columnHeaders, columnData }) => {
                   title.toLowerCase()
                 )}`}
               >
-                {columnHeaders.map(header => (
+                {columnHeaders.map((header) => (
                   <div key={title + header}>{header}</div>
                 ))}
               </div>

@@ -124,7 +124,7 @@ const Input = () => {
               },
             },
           }) => [
-            `${start} — ${end ? end : ''}`,
+            `${start}—${end ? end : ''}`,
             link ? `<a href="${link}">${company}</a>` : company,
             role,
             responsibilities,
@@ -143,7 +143,7 @@ const Input = () => {
                 frontmatter: { start, end, school, degree },
               },
             },
-          }) => [`${start} — ${end}`, school, degree]
+          }) => [`${start}—${end}`, school, degree]
         )}
       />
 

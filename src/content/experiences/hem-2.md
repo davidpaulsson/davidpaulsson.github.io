@@ -1,9 +1,9 @@
 ---
-start: 2020
-end: 2022
+start: 2022
+end:
 company: Hem
 link: https://hem.com/
-role: Senior front-end Developer
+role: Tech Lead
 responsibilities: E-commerce and internal tools
 ---
 

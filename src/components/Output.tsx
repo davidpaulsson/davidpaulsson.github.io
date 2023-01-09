@@ -10,10 +10,7 @@ const Output = () => {
       query {
         output: allFile(
           filter: { sourceInstanceName: { eq: "projects" } }
-          sort: {
-            fields: childMarkdownRemark___frontmatter___date
-            order: DESC
-          }
+          sort: { childMarkdownRemark: { frontmatter: { date: DESC } } }
         ) {
           nodes {
             id

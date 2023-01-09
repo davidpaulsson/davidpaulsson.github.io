@@ -22,10 +22,7 @@ const Input = () => {
         }
         experiences: allFile(
           filter: { sourceInstanceName: { eq: "experiences" } }
-          sort: {
-            fields: childMarkdownRemark___frontmatter___start
-            order: DESC
-          }
+          sort: { childMarkdownRemark: { frontmatter: { start: DESC } } }
         ) {
           edges {
             node {
@@ -46,10 +43,7 @@ const Input = () => {
         }
         education: allFile(
           filter: { sourceInstanceName: { eq: "education" } }
-          sort: {
-            fields: childMarkdownRemark___frontmatter___start
-            order: DESC
-          }
+          sort: { childMarkdownRemark: { frontmatter: { start: DESC } } }
         ) {
           edges {
             node {
@@ -67,10 +61,7 @@ const Input = () => {
         }
         awards: allFile(
           filter: { sourceInstanceName: { eq: "awards" } }
-          sort: {
-            fields: childMarkdownRemark___frontmatter___year
-            order: DESC
-          }
+          sort: { childMarkdownRemark: { frontmatter: { year: DESC } } }
         ) {
           edges {
             node {

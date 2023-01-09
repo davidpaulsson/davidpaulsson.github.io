@@ -8,10 +8,7 @@ const Testimonials = () => {
       query {
         testimonials: allFile(
           filter: { sourceInstanceName: { eq: "testimonials" } }
-          sort: {
-            fields: childrenMarkdownRemark___frontmatter___date
-            order: DESC
-          }
+          sort: { childrenMarkdownRemark: { frontmatter: { date: DESC } } }
         ) {
           edges {
             node {

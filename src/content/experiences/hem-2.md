@@ -4,7 +4,7 @@ end:
 company: Hem
 link: https://hem.com/
 role: Tech Lead
-responsibilities: E-commerce and internal tools
+responsibilities: Everything tech
 ---
 
-Hem is a Stockholm-based independent design brand creating a new generation of furniture, accessories and lighting. Imaginative designs of obsessive quality. I'm resposible for the user-experience and development of hem.com.
+Hem is a Stockholm-based independent design brand creating a new generation of furniture, accessories and lighting. Imaginative designs of obsessive quality. As Tech Lead I'm in charge of our technical decitions and out stack. Current main focus is hem.com, our Gatsby-powered world-class e-commerce website.

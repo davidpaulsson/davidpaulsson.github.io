@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import React from 'react';
 import useDarkMode from 'use-dark-mode';
 import './Logo.scss';
@@ -7,14 +7,14 @@ const Logo = () => {
   const darkMode = useDarkMode();
 
   return (
-    <motion.svg
+    <m.svg
       className="logo"
       viewBox="0 0 70 45"
       width="70"
       height="45"
       onClick={darkMode.toggle}
     >
-      <motion.rect
+      <m.rect
         width="10"
         height="45"
         x="5"
@@ -23,7 +23,7 @@ const Logo = () => {
         transition={{ ease: [0.87, 0, 0.13, 1], duration: 0.6 }}
         initial={false}
       />
-      <motion.circle
+      <m.circle
         cx="42"
         cy="22"
         r="17"
@@ -31,7 +31,7 @@ const Logo = () => {
         transition={{ ease: [0.87, 0, 0.13, 1], duration: 0.6 }}
         initial={false}
       />
-    </motion.svg>
+    </m.svg>
   );
 };
 

@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: 'never',
   siteMetadata: {
     title: `David Paulsson`,
     description: `I am a developer based in Stockholm, Sweden. Put the user first. Sweat the little details. Fight for good UX.`,

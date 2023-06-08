@@ -1,4 +1,4 @@
-import { motion, useCycle } from 'framer-motion';
+import { m, useCycle } from 'framer-motion';
 import React from 'react';
 import './Header.scss';
 import Toggle from './Toggle';
@@ -18,7 +18,7 @@ const Header = ({ headline, subtitle, html }) => {
 
   return (
     <header className="header">
-      <motion.h1
+      <m.h1
         animate={isOpen ? { opacity: 0.5 } : { opacity: 1 }}
         transition={{ duration: 0.3 }}
         className="header__title"
@@ -26,9 +26,9 @@ const Header = ({ headline, subtitle, html }) => {
         {headline}
         <br />
         {horunge(subtitle)} <Toggle {...{ isOpen, setIsOpen }} />
-      </motion.h1>
+      </m.h1>
 
-      <motion.div
+      <m.div
         className="h2 header__content"
         style={{ overflow: 'hidden' }}
         initial={{ height: 0, opacity: 0 }}

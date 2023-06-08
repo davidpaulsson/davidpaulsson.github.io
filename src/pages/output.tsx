@@ -1,13 +1,9 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Link } from 'gatsby';
 import React from 'react';
 import Input from '../components/Input';
 import Output from '../components/Output';
-import {
-  behindTransition,
-  coverTransition,
-  frontTransition,
-} from '../utils/transitions';
+import { coverTransition, frontTransition } from '../utils/transitions';
 import useElementSize from '../utils/useElementSize';
 import useWindowSize from '../utils/useWindowSize';
 import './styles.scss';
@@ -18,24 +14,16 @@ const IndexPage = () => {
 
   return (
     <>
-      <motion.div
-        style={{ height: behindHeight + 'px' }}
-        className="behind pad"
-        {...behindTransition}
-      >
+      <div style={{ height: behindHeight + 'px' }} className="behind pad">
         <Input />
-      </motion.div>
-      <motion.div className="cover" {...coverTransition} />
+      </div>
+      <m.div className="cover" {...coverTransition} />
       <Link className="behind" to="/" title="Go to homepage" />
-      <motion.div
-        ref={behindRef}
-        className="front"
-        {...frontTransition({ height })}
-      >
+      <m.div ref={behindRef} className="front" {...frontTransition({ height })}>
         <div className="pad">
           <Output />
         </div>
-      </motion.div>
+      </m.div>
     </>
   );
 };

@@ -8,7 +8,7 @@ import useElementSize from '../utils/useElementSize';
 import useWindowSize from '../utils/useWindowSize';
 import './styles.scss';
 
-const IndexPage = () => {
+const OutputPage = () => {
   const { height } = useWindowSize();
   const [behindRef, { height: behindHeight }] = useElementSize();
 
@@ -28,4 +28,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default OutputPage;

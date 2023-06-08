@@ -5,6 +5,7 @@ module.exports = {
     email: `david@davidpaulsson.se`,
     author: `davidpaulsson`,
   },
+  trailingSlash: 'always',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,10 +1,10 @@
 ---
 start: 2022
-end:
+end: 2024
 company: Hem
 link: https://hem.com/
-role: Tech Lead
+role: Technical Lead
 responsibilities: Everything tech
 ---
 
-Hem is a Stockholm-based independent design brand creating a new generation of furniture, accessories and lighting. Imaginative designs of obsessive quality. As Tech Lead I'm in charge of our technical decitions and our stack. Current main focus is hem.com, our Gatsby-powered world-class e-commerce website.
+Hem is a Stockholm-based independent design brand redefining furniture, accessories, and lighting with imaginative designs of exceptional quality. As the Technical Lead, I oversee our technology stack and drive key technical decisions. My primary focus is hem.com, our world-class e-commerce platform, ensuring it delivers a seamless and engaging user experience.

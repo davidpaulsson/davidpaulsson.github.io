@@ -146,6 +146,7 @@ $numbers: zero one two three four five six seven eight nine;
     }
 
     &__item {
+      text-wrap: pretty;
       @each $number in $numbers {
         $i: index($numbers, $number);
         &:nth-child(#{$i}) {
